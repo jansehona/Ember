@@ -2,6 +2,13 @@
 
 module.exports = function(environment) {
   let ENV = {
+//     contentSecurityPolicy: {
+//         'connect-src': "*"
+//     },
+//     ENV['ember-simple-auth'] = {
+//   routeAfterAuthentication: 'dashboard',
+//   routeIfAlreadyAuthenticated: 'dashboard'
+// };
     modulePrefix: 'todo-list-frontend',
     environment,
     rootURL: '/',
@@ -21,6 +28,11 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
+  };
+
+  ENV['ember-simple-auth'] = {
+    routeAfterAuthentication: 'dashboard',
+    routeIfAlreadyAuthenticated: 'dashboard'
   };
 
   if (environment === 'development') {
