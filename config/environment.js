@@ -2,13 +2,10 @@
 
 module.exports = function(environment) {
   let ENV = {
-//     contentSecurityPolicy: {
-//         'connect-src': "*"
-//     },
-//     ENV['ember-simple-auth'] = {
-//   routeAfterAuthentication: 'dashboard',
-//   routeIfAlreadyAuthenticated: 'dashboard'
-// };
+    contentSecurityPolicy: {
+        'connect-src': "*"
+    },
+
     modulePrefix: 'todo-list-frontend',
     environment,
     rootURL: '/',
@@ -31,8 +28,8 @@ module.exports = function(environment) {
   };
 
   ENV['ember-simple-auth'] = {
-    routeAfterAuthentication: 'dashboard',
-    routeIfAlreadyAuthenticated: 'dashboard'
+    routeAfterAuthentication: 'todos',
+    routeIfAlreadyAuthenticated: 'todos'
   };
 
   if (environment === 'development') {

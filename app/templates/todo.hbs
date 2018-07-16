@@ -1,0 +1,8 @@
+{{outlet}}
+{{#link-to 'todos'}}Back to the todos list{{/link-to}}
+<h3>Todo show</h3>
+{{#each model as |todo|}}
+<h5>{{todo.title}}</h5>
+<h5>{{todo.description}}</h5>
+<h5>{{todo.status}}</h5>
+{{/each}}
