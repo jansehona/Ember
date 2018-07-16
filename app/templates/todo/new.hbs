@@ -1,0 +1,16 @@
+{{outlet}}
+<h3>Todo new</h3>
+<form>
+  <div>
+    <label>Title:</label>
+    {{input type="text" value=model.title}}
+  </div>
+  <div>
+    <label>description:</label>
+    {{textarea rows="5" value=model.description}}
+  </div>
+  <div>
+    <button {{action 'save'}}>save</button>
+    <button {{action 'cancel'}}>cancel</button>
+  </div>
+</form>
